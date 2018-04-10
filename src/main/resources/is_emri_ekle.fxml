@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.shape.Box?>
+<?import dev.demo.Services.SpecialEnums.*?>
+<ScrollPane hbarPolicy="NEVER" styleClass="scrollPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.IsemriController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" >İş Emri Ekle</Label>
+        </HBox>
+        <VBox fx:id="form" styleClass="extendedForm">
+                <Label>İş Emri Sayısı:  </Label>
+                <TextField fx:id="isEmriNoTF" ></TextField>
+                <Label >İş Emri Tarihi: </Label>
+                <DatePicker fx:id="isEmriDefaultTarihDP"></DatePicker>
+                <Label >İş Emri Konusu: </Label>
+                <TextField fx:id="isEmriKonuTA"></TextField>
+                <Label >Tarh Vergi Dairesi:  </Label>
+                <TextField fx:id="tarhVergiDaireTF"></TextField>
+                <Label >İş Emri Bitiş Tarihi: </Label>
+                <DatePicker fx:id="isEmriTarihDP"></DatePicker>
+                <Label >Mukellef: </Label>
+                <ComboBox fx:id="vergiKimlikNoCB"></ComboBox>
+                <Label >İnceleme Yılı: </Label>
+                <TextField fx:id="incelemeYilTF"></TextField>
+                <Label >İnceleme Türü: </Label>
+                <ComboBox fx:id="incelemeTurCB" promptText="İnceleme Türü Seçin">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <TextEnum fx:value="SINIRLI" />
+                            <TextEnum fx:value="TAM" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+        </VBox>
+        <Box></Box>
+        <HBox styleClass="bottomHBox">
+            <Button fx:id="ekleButton">Ekle</Button>
+        </HBox>
+    </VBox>
+</ScrollPane>

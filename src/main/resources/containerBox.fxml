@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<fx:root type="javafx.scene.layout.HBox" xmlns:fx="http://javafx.com/fxml">
+<VBox fx:id="innerContainer" styleClass="innerContainer" >
+        	<HBox fx:id="topBox" styleClass="topBox">
+        		
+        	</HBox>
+        	<HBox fx:id="textBox" styleClass="textBox">
+        		<Text fx:id="textData" styleClass="textData" wrappingWidth="590"></Text>
+       	</HBox>
+</VBox>
+</fx:root>

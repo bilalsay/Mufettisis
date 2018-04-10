@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Box?>
+<ScrollPane prefHeight="400.0" hbarPolicy="NEVER" styleClass="scrollPane" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.MukellefController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" ></Label>
+        </HBox>
+        <HBox>        
+        <VBox styleClass="postingForm" >
+                <Label styleClass="titleInside" textAlignment="CENTER" >YMM Bilgileri</Label>
+                <Label >Ad Soyad: </Label>
+                <TextField fx:id="ymmAdSoyadTF"></TextField>
+                <Label >Telefon: </Label>
+                <TextField fx:id="ymmTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="ymmEmailTF"></TextField>
+        </VBox>
+        </HBox>
+        <Box></Box>
+        <HBox styleClass="bottomHBox">
+            <Button fx:id="kaydetButton">Kaydet</Button>
+        </HBox>
+    </VBox>
+</ScrollPane>

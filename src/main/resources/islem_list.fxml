@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.shape.Box?>
+<?import dev.demo.Services.SpecialEnums.*?>
+<ScrollPane hbarPolicy="NEVER" styleClass="scrollPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.IslemController">
+   <VBox >
+        <HBox alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" >Tamamlanmamış İşlemler</Label>
+        </HBox>
+        
+        <VBox styleClass="noteConteiner" alignment="BASELINE_CENTER">
+	                <HBox styleClass="bottomHBox" style="-fx-min-width: 620px; -fx-max-width: 620px;">
+			            <Button fx:id="tamamButton" styleClass="tamamButton" text="Tamamlanmış"/>
+			            <Box></Box>
+			            <ComboBox fx:id="searchKategori" style="-fx-min-width: 150px; -fx-max-width: 150px;-fx-min-height: 32px; -fx-max-height: 32px;" promptText="Kategori">
+		                    <items>
+		                        <FXCollections fx:factory="observableArrayList">
+		                            <ColorCategory fx:value="YELLOW"/>
+		                            <ColorCategory fx:value="RED" />
+		                            <ColorCategory fx:value="BLUE" />
+		                            <ColorCategory fx:value="PURPLE" />
+		                            <ColorCategory fx:value="ORANGE" />
+		                            <ColorCategory fx:value="GREEN" />
+		                        </FXCollections>
+		                    </items>
+		                </ComboBox>
+		                <Box></Box>
+		                <TextField fx:id="searchTF" styleClass="searchTF"></TextField>
+		                <Box></Box>
+		                <Button fx:id="allButton" styleClass="allButton"  text="Tümü"/>
+	        			</HBox>
+        		<ScrollPane  styleClass="noteScroolPane" fx:id="noteScrollPane" hbarPolicy="NEVER" maxHeight="555.0" minHeight="555.0" fitToHeight="true" vvalue="1.0">
+	        		<content>
+			        <VBox fx:id="extendedFormForScrollingData">
+			        
+			        </VBox>
+		        </content>
+	        </ScrollPane>
+	        <HBox styleClass="bottomHBox" style="-fx-min-width: 800px; -fx-max-width: 800px;">
+	        			<ComboBox fx:id="kategoriCB" style="selectKategori" promptText="Renk">
+	                    <items>
+	                        <FXCollections fx:factory="observableArrayList">
+	                            <ColorCategory fx:value="YELLOW"/>
+	                            <ColorCategory fx:value="RED" />
+	                            <ColorCategory fx:value="BLUE" />
+	                            <ColorCategory fx:value="PURPLE" />
+	                            <ColorCategory fx:value="ORANGE" />
+	                            <ColorCategory fx:value="GREEN" />
+	                        </FXCollections>
+	                    </items>
+	                </ComboBox>
+	                <Box></Box>
+	                <TextArea fx:id="icerikTA" styleClass="noteIcerikTA" wrapText="true"></TextArea>
+	                <Box></Box>
+	                <Button styleClass="kaydetButton" fx:id="kaydetButton">Kaydet</Button>
+	        </HBox>
+    		</VBox>
+    </VBox>
+</ScrollPane>

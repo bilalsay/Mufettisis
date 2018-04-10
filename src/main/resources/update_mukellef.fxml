@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import dev.demo.Services.SpecialEnums.*?>
+<ScrollPane prefHeight="400.0" hbarPolicy="NEVER" styleClass="scrollPane" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.MukellefController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" ></Label>
+        </HBox>
+        <HBox>
+        <VBox fx:id="form" styleClass="postingForm" >
+                <Label styleClass="titleInside" textAlignment="CENTER" >Mükellef Bilgileri</Label>
+                <Label >Unvanı/Adı Soyadı: </Label>
+                <TextField fx:id="unvanTF" ></TextField>
+                <Label >Vergi Kimlik No: </Label>
+                <TextField fx:id="vergiKimlikNoTF" ></TextField>
+                <Label >Tc Kimlik No: </Label>
+                <TextField fx:id="tcKimlikNoTF" ></TextField>
+                <Label >Vergi Daire: </Label>
+                <ComboBox fx:id="vergiDaireCB" promptText="Vergi Dairesi Seçin" editable="true">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Beşocak Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Ceyhan Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Çukurova Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="İhtisas Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Karataş Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Kozan Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Yüreğir Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Ziyapaşa Vergi Dairesi Müdürlüğü" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <Label >Faaliyet Konusu: </Label>
+                <TextField fx:id="faaliyetKonuTF"></TextField>
+                <Label >Faaliyet Durumu: </Label>
+                <ComboBox fx:id="faaliyetDurumCB" promptText="Faaliyet Durumunu Seçin">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <TextEnum fx:value="FAAL"/>
+                            <TextEnum fx:value="TERK"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <VBox visible="false" fx:id="terkTarihInput">
+
+                </VBox>
+        </VBox>
+        <VBox></VBox>
+        <VBox styleClass="postingForm" >
+                <Label style="-fx-padding: 9px 0"></Label>
+                <Label >Telefon: </Label>
+                <TextField fx:id="telefonTF"></TextField>
+                <Label >GSM Telefon: </Label>
+                <TextField fx:id="gsmTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="emailTF"></TextField>
+                <Label >İş Yeri Adresi: </Label>
+                <TextField fx:id="isYeriAdresTA"></TextField>
+                <Label >İkametgah Adresi: </Label>
+                <TextField fx:id="ikametgahAdresTA"></TextField>
+        </VBox>
+        </HBox>
+        <Box></Box>
+        <HBox styleClass="bottomHBox">
+            <Button fx:id="kaydetButton">Kaydet</Button>
+        </HBox>
+    </VBox>
+</ScrollPane>

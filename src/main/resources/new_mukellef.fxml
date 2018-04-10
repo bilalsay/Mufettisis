@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import dev.demo.Services.SpecialEnums.*?>
+<ScrollPane  hbarPolicy="NEVER" styleClass="scrollPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.MukellefController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" >Mükellef Ekle</Label>
+        </HBox>
+        <HBox>
+        <VBox fx:id="form" styleClass="postingForm" >
+                <Label styleClass="titleInside" textAlignment="CENTER" >Mükellef Bilgileri</Label>
+                <Label >Unvanı/Adı Soyadı: </Label>
+                <TextField fx:id="unvanTF" ></TextField>
+                <Label >Vergi Kimlik No: </Label>
+                <TextField fx:id="vergiKimlikNoTF" ></TextField>
+                <Label >Tc Kimlik No: </Label>
+                <TextField fx:id="tcKimlikNoTF" ></TextField>
+                <Label >Vergi Daire: </Label>
+                <ComboBox fx:id="vergiDaireCB" promptText="Vergi Dairesi Seçin" editable="true">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Beşocak Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Ceyhan Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Çukurova Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="İhtisas Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Karataş Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Kozan Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Yüreğir Vergi Dairesi Müdürlüğü" />
+                            <String fx:value="Ziyapaşa Vergi Dairesi Müdürlüğü" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <Label >Faaliyet Konusu: </Label>
+                <TextField fx:id="faaliyetKonuTF"></TextField>
+                <Label >Faaliyet Durumu: </Label>
+                <ComboBox fx:id="faaliyetDurumCB" promptText="Faal" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <TextEnum fx:value="FAAL"/>
+                            <TextEnum fx:value="TERK"/>
+                        </FXCollections>
+                    </items>
+                    <value>
+                        <TextEnum fx:value="FAAL"/>
+                    </value>
+                </ComboBox>
+                <VBox visible="false" fx:id="terkTarihInput">
+
+                </VBox>
+                <Label >Telefon: </Label>
+                <TextField fx:id="telefonTF"></TextField>
+                <Label >GSM Telefon: </Label>
+                <TextField fx:id="gsmTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="emailTF"></TextField>
+                <Label >İş Yeri Adresi: </Label>
+                <TextField fx:id="isYeriAdresTA"></TextField>
+                <Label >İkametgah Adresi: </Label>
+                <TextField fx:id="ikametgahAdresTA"></TextField>
+        </VBox>
+        <VBox></VBox>
+        <VBox styleClass="postingForm" >
+                <Label styleClass="titleInside" textAlignment="CENTER" >Temsilci Bilgileri</Label>
+                <Label >Ad Soyad: </Label>
+                <TextField fx:id="temsilciAdSoyadTF"></TextField>
+                <Label >Tc Kimlik No: </Label>
+                <TextField fx:id="temsilciTcKimlikNoTF"></TextField>
+                <Label >Telefon: </Label>
+                <TextField fx:id="temsilciTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="temsilciEmailTF"></TextField>
+                <Label >İkametgah Adresi: </Label>
+                <TextField fx:id="temsilciIkametgahAdresTA"></TextField>
+
+                <Label></Label>
+                <Label styleClass="titleInside" textAlignment="CENTER" >SMM Bilgileri</Label>
+                <Label >Ad Soyad: </Label>
+                <TextField fx:id="smmAdSoyadTF"></TextField>
+                <Label >Telefon: </Label>
+                <TextField fx:id="smmTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="smmEmailTF"></TextField>
+                <Label></Label>
+                <Label styleClass="titleInside" textAlignment="CENTER" >YMM Bilgileri</Label>
+                <Label >Ad Soyad: </Label>
+                <TextField fx:id="ymmAdSoyadTF"></TextField>
+                <Label >Telefon: </Label>
+                <TextField fx:id="ymmTelefonTF"></TextField>
+                <Label >Email: </Label>
+                <TextField fx:id="ymmEmailTF"></TextField>
+        </VBox>
+        </HBox>
+        <Box></Box>
+        <HBox styleClass="bottomHBox">
+            <Button fx:id="ekleButton">Ekle</Button>
+        </HBox>
+    </VBox>
+</ScrollPane>

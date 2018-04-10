@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane stylesheets="main.css" xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="dev.demo.Controller.MainController" >
+    <left>
+        <VBox  prefWidth="200" styleClass="buttons">
+            <Button text="Mükellefler" onAction="#mukellefMainPage"/>
+            <Label></Label>
+            <Button text="İş Emirleri" onAction="#isEmriMainPage"/>
+        </VBox>
+    </left>
+    <center>
+
+    </center>
+    <bottom>
+    </bottom>
+</BorderPane>

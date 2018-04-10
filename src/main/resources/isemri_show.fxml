@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Box?>
+<ScrollPane  hbarPolicy="NEVER" styleClass="scrollPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.IsemriController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        <Button fx:id="backButton" styleClass="backButton" ></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" >İş Emri Detay</Label>
+        </HBox>
+        <Label textAlignment="CENTER" ></Label>
+        <VBox styleClass="extendedForm">
+            <HBox>
+                <HBox styleClass="contentBox">
+                    <VBox>
+                        <Label styleClass="titleInside" textAlignment="CENTER" >Mükellef Bilgileri</Label>
+                        <VBox styleClass="bilgiContent" fx:id="mukellefBilgiContent">
+
+                        </VBox>
+                        <HBox styleClass="bottomHBox">
+				            <Button fx:id="mukellefShowButton" text="Göster"/>
+	            			</HBox>
+                    </VBox>
+                </HBox>
+                <Label></Label>
+                <HBox styleClass="contentBox">
+                    <VBox>
+                        <Label styleClass="titleInside" textAlignment="CENTER">İş Emri Bilgileri</Label>
+                        <VBox styleClass="bilgiContent" fx:id="isemriBilgiContent">
+
+                        </VBox>
+                        <HBox styleClass="bottomHBox">
+				            <Button fx:id="isemriGuncelleButton" text="Güncelle"/>
+				            <Box></Box>
+				            <Button fx:id="silButton" text="Sil"/>
+	           			</HBox>
+                    </VBox>
+                </HBox>
+            </HBox>
+        		<HBox styleClass="bottomButtonPlace">
+             	<HBox styleClass="bottomHBox">
+             		<Button fx:id="raporAlButton" text="Rapor Al"/>
+		            <Box></Box>
+            			<Button fx:id="notlarListButton" text="Notlar"/>
+            			<Box></Box>
+	            		<Button fx:id="islemlerListButton" text="İşlemler"/>
+            			<Box></Box>
+	            		<Button fx:id="mulakatListButton" text="Mulakat"/>
+        			</HBox>
+            </HBox>
+        </VBox>
+    </VBox>
+</ScrollPane>

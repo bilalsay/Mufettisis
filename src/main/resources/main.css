@@ -1,0 +1,452 @@
+.scroll-pane .scroll-bar:vertical {
+	 -fx-background-color: transparent;
+}
+
+.scrollPane {
+    -fx-padding: 0px 10px;
+    -fx-background-color: transparent;
+}
+
+.rightMainContainer {
+}
+
+.buttons {
+    -fx-padding: 60px 10px
+}
+
+.buttons Button{
+    -fx-padding:10px;
+    -fx-pref-width: 200px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color:#ffffff;
+    -fx-border-style: solid solid solid solid;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color: #dddddd;
+    
+}
+
+.buttons Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color:#eeeeee;
+}
+
+.bottomHBox {
+    -fx-padding: 20px 10px;
+    -fx-margin-right: 10px;
+    -fx-background-insets: 10px
+}
+
+.bottomHBox Button {
+    -fx-margin-right: 5px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-float: left;
+    -fx-background-color: #AEC1B8;
+    -fx-text-fill: #ffffff;
+}
+
+.bottomHBox Button:hover{
+    -fx-background-color: #eeeeee;
+    -fx-cursor: hand;
+    -fx-text-fill: #000000;
+}
+
+TableView TableRow:hover {
+    -fx-cursor: hand;
+}
+
+#listTable {
+	-fx-background-color: transparent;
+	-fx-min-width: 1200px;
+    -fx-min-height: 100px
+}
+
+#kategoriTC {
+		-fx-alignment: center;
+}
+
+#kategoriTC Label {
+		-fx-min-width: 20px;
+		-fx-min-height: 20px;
+}
+
+.miniForm {
+    -fx-background-color: #fff;
+    -fx-padding: 10px;
+    -fx-min-width: 600px;
+}
+
+.postingForm {
+    -fx-background-color: #fff;
+    -fx-padding: 10px;
+    -fx-min-width: 600px;
+}
+
+.extendedForm {
+    -fx-background-color: #fff;
+    -fx-padding: 10px;
+	-fx-min-width: 1200px;
+}
+
+
+.miniForm Label, .miniForm TitleLabel {
+    -fx-font-size: 17px;
+    -fx-padding: 2px 1px;
+}
+
+.postingForm Label, .postingForm TitleLabel, .extendedForm Label, .extendedForm TitleLabel {
+    -fx-font-size: 17px;
+    -fx-padding: 5px;
+}
+
+.extendedForm Label, .postingForm Label {
+    -fx-padding: 15px 0px 10px 0px;
+}
+
+.postingForm TextField {
+    -fx-min-width: 400px;
+    -fx-height: 30px
+}
+.searchTF {
+    -fx-min-width: 200px;
+    -fx-min-height: 32px
+}
+.postingForm DatePicker {
+    -fx-min-width: 400px;
+    -fx-height: 30px
+}
+
+.postingForm ComboBox {
+    -fx-min-width: 400px;
+    -fx-height: 30px
+}
+
+.postingForm TextArea {
+    -fx-min-width: 400px;
+    -fx-max-height: 100px
+}
+
+.title {
+    -fx-background-insets: 10px;
+    -fx-padding: 10px 20px;
+    -fx-float: left;
+    -fx-font: 18px bold;
+
+}
+.titleColumn {
+	-fx-padding: 10px
+}
+
+.titleInside {
+    -fx-padding: 5px 20px;
+    -fx-float: left;
+    -fx-font: 23px bold;
+    -fx-text-align: center;
+    -fx-min-width: 550px;
+    -fx-background-color: #ffffff;
+    -fx-border-style: solid solid solid solid;
+    -fx-border-width: 1 5 1 5;
+    -fx-border-color: #B9CFD4;
+	/*-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 3, 0.0, 0.0, 5);*/
+}
+
+.contentBox {
+    -fx-padding: 10px;
+    -fx-min-width: 590px;
+    
+}
+
+.vPadding {
+    -fx-padding: 15px 0px 0px 0px ;
+}
+
+.backButton {
+    -fx-float: left;
+    -fx-background-color: transparent;
+    -fx-background-image: url('/backButton.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+	-fx-background-insets: -5 -9;
+}
+
+.backButton:hover {
+    -fx-cursor: hand;
+}
+
+.bottomButtonPlace {
+	fx-border-style: solid none none none;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #eeeeee;
+}
+
+.bilgiContent MTextField {
+	-fx-background-color: transparent;
+	-fx-font-size: 17px;
+    -fx-font-weight: bold;
+	-fx-display-caret: false;
+	-fx-min-width: 350px 
+}
+
+.noteIcerikTA {
+	-fx-font-size: 15px;
+	-fx-min-width: 600px;
+	-fx-max-height: 60px
+}
+
+#extendedFormForScrollingData {
+	-fx-background-color: #ffffff;
+	-fx-alignment: center;
+	-fx-min-width: 620px;
+	-fx-max-width: 620px;
+}
+
+#extendedFormForScrollingData ContainerBox {
+    -fx-padding: 10px 0;
+    
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer {
+	-fx-min-width: 600px;
+    -fx-max-width: 600px;
+	-fx-border-weight: 1px;
+	-fx-border-color:#eee
+}
+
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox {
+	-fx-min-width: 600px;
+    -fx-max-width: 600px;
+	-fx-border-style: none none solid none;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #eeeeee;
+	-fx-padding: 2px 5px;
+	-fx-font-size: 13px;
+	-fx-font-weight: bold
+}
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox Button:hover {
+	-fx-cursor: hand;
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .topLeftBox {
+	-fx-min-width: 500px;
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .topRightBox {
+	-fx-min-width: 90px;
+	-fx-max-width: 90px;
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .removeButton {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/removable.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto; 
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .removeButton:hover {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/remove.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto; 
+	
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .kategoriLabel {
+	-fx-min-width: 15px;
+	-fx-min-height: 15px; 
+	-fx-max-width: 15px;
+	-fx-max-height: 15px; 
+	-fx-background-radius: 120;
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .dateLabel {
+	-fx-padding: 0 5px
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .textBox {
+	-fx-padding: 5px;
+}
+
+#extendedFormForScrollingData ContainerBox .innerContainer .topBox .textData {
+	-fx-min-width: 80px; 
+	-fx-max-width: 80px;
+	-fx-background-color: transparent
+}
+
+.noteConteiner {
+	-fx-min-width: 1200px;
+	-fx-min-height: 700px;
+	-fx-max-height: 700px;
+	-fx-background-color: #ffffff;
+	-fx-padding: 10px
+}
+
+
+.noteConteiner .bottomHBox {
+	-fx-padding: 5px 0;
+}
+
+.noteConteiner .bottomHBox ComboBox {
+	-fx-background-color: #AEC1B8;
+    -fx-text-fill: #ffffff;
+	-fx-max-width: 90px;
+	-fx-min-width: 90px;
+	-fx-min-height: 60px;
+	
+}
+
+.noteConteiner .bottomHBox ComboBox:hover {
+	 -fx-cursor: hand
+}
+
+.noteConteiner .combo-box .cell{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #AEC1B8;
+}
+
+.noteConteiner .combo-box .cell:hover{
+    -fx-text-fill: #AEC1B8;
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand
+}
+
+.noteConteiner .bottomHBox .kaydetButton {
+	-fx-min-width: 90px;
+	-fx-min-height: 60px;
+}
+
+.noteConteiner .noteScroolPane {
+	-fx-padding: 10px 0;
+	-fx-min-width: 620px;
+	-fx-max-width: 620px;
+	-fx-background-color: transparent;
+	
+}
+
+.tamamButton, .notTamamButton {
+	-fx-min-width: 150px;
+	-fx-min-width: 150px;
+}
+
+.ok {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/ok.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+	
+}
+
+.ok:hover {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/notOk.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+.editButton {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/edit.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+	
+}
+
+.uploadButton {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/upload.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+	
+}
+
+.editButton:hover {
+}
+
+.notOk {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/notOk.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+.notOk:hover {
+	-fx-padding: 0;
+	-fx-min-width: 24px;
+	-fx-max-width: 24px;
+	-fx-min-height: 24px;
+	-fx-max-height: 24px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/ok.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+.ansveredButton {
+	-fx-padding: 0;
+	-fx-min-width: 32px;
+	-fx-max-width: 32px;
+	-fx-min-height: 32px;
+	-fx-max-height: 32px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/ansvered.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+.notAnsveredButton {
+	-fx-padding: 0;
+	-fx-min-width: 32px;
+	-fx-max-width: 32px;
+	-fx-min-height: 32px;
+	-fx-max-height: 32px;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/notAnsvered.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: cover, auto;
+}
+
+.ansveredButton:hover {
+	-fx-background-color: transparent;
+}
+
+.notAnsveredButton:hover {
+	-fx-background-color: transparent;
+}

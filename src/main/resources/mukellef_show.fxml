@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Box?>
+<ScrollPane  hbarPolicy="NEVER" styleClass="scrollPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.demo.Controller.MukellefController">
+    <VBox>
+        <HBox style="" alignment="CENTER">
+        		<Button fx:id="backButton" styleClass="backButton"></Button>
+        		<Label fx:id="title" styleClass="title" textAlignment="CENTER" ></Label>
+        </HBox>
+        <Label textAlignment="CENTER" ></Label>
+        <VBox styleClass="extendedForm">
+            <HBox>
+                <HBox styleClass="contentBox">
+                    <VBox>
+                        <Label styleClass="titleInside" textAlignment="CENTER" >Mükellef Bilgileri</Label>
+						<VBox styleClass="bilgiContent" fx:id="mukellefBilgiContent">
+
+						</VBox>
+                        <HBox styleClass="bottomHBox">
+							<Button fx:id="guncelleButton" text="Güncelle"/>
+							<Box></Box>
+							<Button fx:id="silButton" text="Sil"/>
+        				</HBox>
+						<HBox styleClass="contentBox">
+							<VBox>
+								<Label styleClass="titleInside" textAlignment="CENTER" >Temsilci Bilgileri</Label>
+								<VBox styleClass="bilgiContent" fx:id="temsilciBilgiContent">
+
+								</VBox>
+								<HBox styleClass="bottomHBox">
+									<Button fx:id="temsilciGuncelleButton" text="Güncelle"/>
+								</HBox>
+							</VBox>
+						</HBox>
+                    </VBox>
+                </HBox>
+
+                <VBox>
+	                <HBox styleClass="contentBox">
+	                    <VBox>
+	                        <Label styleClass="titleInside" textAlignment="CENTER" >SMM Bilgileri</Label>
+	                        <VBox styleClass="bilgiContent" fx:id="smmBilgiContent">
+	
+	                        </VBox>
+	                        <HBox styleClass="bottomHBox">
+						       	<Button fx:id="smmGuncelleButton" text="Güncelle"/>
+        						</HBox>
+	                    </VBox>
+	                </HBox>
+	                
+	                <HBox styleClass="contentBox">
+	                    <VBox>
+	                        <Label styleClass="titleInside" textAlignment="CENTER" >YMM Bilgileri</Label>
+	                        <VBox styleClass="bilgiContent" fx:id="ymmBilgiContent">
+	
+	                        </VBox>
+	                        <HBox styleClass="bottomHBox">
+						       	<Button fx:id="ymmGuncelleButton" text="Güncelle"/>
+        						</HBox>
+	                    </VBox>
+	                </HBox>
+                </VBox>
+            </HBox>
+        			<HBox styleClass="bottomButtonPlace">
+	                <HBox styleClass="bottomHBox">
+			            <Button fx:id="ekleButton" text="İş Emri Ekle"/>
+			            <Box></Box>
+			            <Button fx:id="listIsemriButton" text="İş Emirleri"/>
+	        			</HBox>
+        			</HBox>	
+        </VBox>
+    </VBox>
+</ScrollPane>

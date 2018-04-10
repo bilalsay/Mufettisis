@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root type="javafx.scene.layout.HBox" xmlns:fx="http://javafx.com/fxml">
+	<HBox styleClass="topLeftBox" alignment="CENTER_LEFT">
+		<Label fx:id="kategoriLabel" styleClass="kategoriLabel"></Label>
+		<Label fx:id="dateLabel" styleClass="dateLabel"></Label>
+		<Button fx:id="okButton"></Button>
+		<Button fx:id="editButton" styleClass="editButton"></Button>
+		<Button fx:id="uploadButton" styleClass="uploadButton" visible="false"></Button>
+	</HBox>
+	<HBox styleClass="topRightBox" alignment="CENTER_RIGHT">
+		<Button fx:id="removeButton" styleClass="removeButton"></Button>
+	</HBox>	
+</fx:root>
